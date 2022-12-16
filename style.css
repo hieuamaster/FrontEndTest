@@ -108,6 +108,7 @@ body {
 .container .img {
     width: 128px;
     height: 128px;
+    float: left;
 }
 
 .container .img-1 {
