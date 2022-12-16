@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Roboto;
+}
+
+body {
+    height: 100vh;
+    background: #ffffff;
+}
+
+/* SIDEBAR CSS  */
+.sidebar {
+    background-color: #191718;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #aaaaaa;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+.sidebar a.active {
+    color: #ffffff;
+}
+
+.sidebar a:hover:not(.active) {
+    color: #ffffff;
+    background-color: #5c5c5c;
+}
+
+/* CONTENT CSS */
+.content {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 129px;
+    background-color: #ffffff;
+}
+
+/* NCC LOGO */
+.logo {
+    width: 310px;
+    height: 122px;
+    margin: 20px auto 30px auto;
+    margin-bottom: 30px;
+    background-image: url(/images/ncclogo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content-1 {
+    background-color: #efefef;
+    text-align: center;
+    padding: 38px;
+}
+
+.content-1 h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 18px;
+}
+
+.content-1 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.content-2 {
+    margin: 40px 0px;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+}
+
+.content-2 .box {
+}
+
+.content-2.box h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.content-2 .container {
+}
+
+.container .img {
+    width: 128px;
+    height: 128px;
+}
+
+.container .img-1 {
+    background-image: url(/images/html.png);
+    background-size: cover;
+}
+
+.container .img-2 {
+    background-image: url(/images/css.png);
+    background-size: cover;
+}
+
+.container .img-3 {
+    background-image: url(/images/url.png);
+    background-size: cover;
+}
+
+footer {
+    bottom: 0;
+    border-top: 1px #dedede;
+}
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3e3e3e;
+    padding: 30px 0px;
+}
+
+/* RESPONSIVE*/
+@media screen and (max-width: 1023px) {
+    .content {
+        padding: 0 30px;
+    }
+    .content-2 {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+    .content-2 {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+    .content-2 {
+        grid-template-columns: auto;
+    }
+}
